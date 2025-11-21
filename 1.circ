@@ -23,9 +23,9 @@
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
   <lib desc="file#ArquitecturaDeComputadoras-23130490-JuanMoroyoqui-ALU/SUMACOLUMNA.circ" name="12"/>
-  <lib desc="file#ArquitecturaDeComputadoras-23130490-JuanMoroyoqui-ALU/SUMA8BITS.circ" name="13"/>
-  <lib desc="file#ArquitecturaDeComputadoras-23130490-JuanMoroyoqui-ALU/ALU.circ" name="14"/>
-  <lib desc="file#ArquitecturaDeComputadoras-23130490-JuanMoroyoqui-ALU/RESTA8BITS.circ" name="15"/>
+  <lib desc="file#ArquitecturaDeComputadoras-23130490-JuanMoroyoqui-ALU/ALU.circ" name="13"/>
+  <lib desc="file#ArquitecturaDeComputadoras-23130490-JuanMoroyoqui-ALU/RESTA8BITS.circ" name="14"/>
+  <lib desc="file#ArquitecturaDeComputadoras-23130490-JuanMoroyoqui-ALU/SUMA8BITS.circ" name="15"/>
   <main name="procesador"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -463,9 +463,6 @@
       <a name="bit7" val="1"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="0" loc="(900,1340)" name="Constant">
-      <a name="width" val="8"/>
-    </comp>
     <comp lib="0" loc="(900,350)" name="Tunnel">
       <a name="label" val="MAR"/>
     </comp>
@@ -486,16 +483,19 @@
       <a name="facing" val="east"/>
       <a name="label" val="ACC2"/>
     </comp>
+    <comp lib="0" loc="(920,1360)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(920,420)" name="Tunnel">
       <a name="label" val="MAR1"/>
     </comp>
     <comp lib="0" loc="(930,1300)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(960,270)" name="Constant">
+    <comp lib="0" loc="(970,610)" name="Constant">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(970,610)" name="Constant">
+    <comp lib="0" loc="(980,290)" name="Constant">
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(990,1440)" name="Constant">
@@ -642,7 +642,7 @@
     <comp lib="1" loc="(980,1950)" name="Controlled Buffer">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="14" loc="(790,1950)" name="main"/>
+    <comp lib="13" loc="(790,1950)" name="main"/>
     <comp lib="2" loc="(1420,970)" name="Multiplexer">
       <a name="facing" val="west"/>
       <a name="width" val="8"/>
@@ -1229,19 +1229,19 @@ c c d d e e f f
     <wire from="(800,490)" to="(810,490)"/>
     <wire from="(810,540)" to="(850,540)"/>
     <wire from="(820,1390)" to="(820,1460)"/>
-    <wire from="(820,1390)" to="(850,1390)"/>
+    <wire from="(820,1390)" to="(840,1390)"/>
     <wire from="(820,1460)" to="(1010,1460)"/>
     <wire from="(820,330)" to="(840,330)"/>
     <wire from="(820,590)" to="(820,630)"/>
     <wire from="(820,590)" to="(870,590)"/>
     <wire from="(820,630)" to="(990,630)"/>
-    <wire from="(830,290)" to="(830,310)"/>
-    <wire from="(830,290)" to="(980,290)"/>
+    <wire from="(830,270)" to="(830,310)"/>
+    <wire from="(830,270)" to="(980,270)"/>
     <wire from="(830,310)" to="(880,310)"/>
+    <wire from="(840,1340)" to="(840,1390)"/>
+    <wire from="(840,1340)" to="(920,1340)"/>
+    <wire from="(840,1390)" to="(870,1390)"/>
     <wire from="(840,330)" to="(840,360)"/>
-    <wire from="(850,1360)" to="(850,1390)"/>
-    <wire from="(850,1360)" to="(920,1360)"/>
-    <wire from="(850,1390)" to="(870,1390)"/>
     <wire from="(860,380)" to="(890,380)"/>
     <wire from="(860,550)" to="(860,560)"/>
     <wire from="(860,560)" to="(870,560)"/>
@@ -1276,7 +1276,6 @@ c c d d e e f f
     <wire from="(90,330)" to="(170,330)"/>
     <wire from="(90,330)" to="(90,360)"/>
     <wire from="(90,360)" to="(120,360)"/>
-    <wire from="(900,1340)" to="(920,1340)"/>
     <wire from="(900,310)" to="(1180,310)"/>
     <wire from="(900,390)" to="(900,420)"/>
     <wire from="(900,420)" to="(920,420)"/>
@@ -1290,7 +1289,6 @@ c c d d e e f f
     <wire from="(940,1300)" to="(940,1330)"/>
     <wire from="(950,1300)" to="(960,1300)"/>
     <wire from="(960,1350)" to="(1000,1350)"/>
-    <wire from="(960,270)" to="(980,270)"/>
     <wire from="(970,1960)" to="(970,2010)"/>
     <wire from="(970,610)" to="(990,610)"/>
     <wire from="(980,1950)" to="(1180,1950)"/>
