@@ -1,0 +1,13 @@
+# Configuración del sistema / Logisim (no forma parte del proyecto)
+.local/
+.config/
+.java/
+.themes/
+.cache/
+.last_revision
+
+# Respaldos y temporales
+*.circ.bak
+*~
+.DS_Store
+Thumbs.db
